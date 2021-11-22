@@ -11,3 +11,9 @@ test('Creates a Manager Object that inherits all of employees info', () => {
     expect(manager.role).toBe('Manager')
 
 })
+
+test('Should return employees roles as manager', () => {
+    const manager = new Manager()
+
+    expect(manager.getRole()).toBe('Manager')
+})
