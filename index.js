@@ -7,6 +7,7 @@ const generateMarkDown = require('./src/generateMarkdown')
 
 var empList = []
 
+export const empList = []
 
 const init = () => {
 
@@ -63,7 +64,7 @@ const init = () => {
                     createIntern();
                     break;
                 case "Make Profile":
-                    makePage();
+                  makePage()
             }
         })
     }
@@ -131,10 +132,8 @@ const init = () => {
     })}
 
     const makePage = () => {
-        return generateMarkDown(empList)
-        .then(data => {
-            console.log(data)
-        })
+        console.log(generateMarkDown(empList))
+        
     }
 
     makeManager();

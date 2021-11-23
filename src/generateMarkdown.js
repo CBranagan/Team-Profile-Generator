@@ -1,18 +1,20 @@
 // need to loop through the array of employees and create a card for each and then attach those cards to the body of
 // the markdown
+
+import {empList} from '../index'
 function employeeCards (data) {
 
     
 
     for(var i=0; i < data.length; i++) {
 
-        if([0].role === 'Manager') {
+        if(empList[i].role === 'Manager') {
 
         return `
 
         <div class="card">
             <div class="card-header">
-                <h4>${[0].name}<h4>
+                <h4>${empList[0].name}<h4>
                 <h5>${data.role}<h5>
             </div>
             <div class="card-body">Emp ID:${data.id}                  
