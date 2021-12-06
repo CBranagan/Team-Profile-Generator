@@ -3,7 +3,7 @@ const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
 const fs = require('fs')
-// const generateMarkDown = require('./src/generateMarkdown')
+const generateMarkDown = require('./src/generateMarkdown')
 
 var empList = []
 
@@ -133,92 +133,7 @@ const init = () => {
 
     const makePage = (empList) => {
 
-        function employeeCards(empList) {
 
-    
-
-            for(var i=0; i < [empList][i].length; i++) {
-        
-                if(empList[i].role === 'Manager') {
-        
-                return `
-        
-                <div class="card">
-                    <div class="card-header">
-                        <h4>${empList[i].name}<h4>
-                        <h5>${empList[i].role}<h5>
-                    </div>
-                    <div class="card-body">Emp ID:${empList[i].id}                  
-                    </div>
-                    <div class="card-body">Email:${empList[i].email}
-                    </div>
-                    <div class="card-body">Office Number:${empList[i].office}
-                    </div>
-                </div>             
-                `
-                }
-                 else if(empList[i].role === 'Engineer') {
-                    
-                return `
-        
-                <div class="card">
-                    <div class="card-header">
-                        <h4>${empList[i].name}<h4>
-                        <h5>${empList[i].role}<h5>
-                    </div>
-                    <div class="card-body">Emp ID:${empList[i].id}                  
-                    </div>
-                    <div class="card-body">Email:${empList[i].email}
-                    </div>
-                    <a href='${empList[i].github}.github.com' class="card-body">GitHub${empList[i].github}</a>
-                </div>             
-                `
-                } else {
-        
-                return `
-        
-                <div class="card">
-                    <div class="card-header">
-                        <h4>${empList[i].name}<h4>
-                        <h5>${empList[i].role}<h5>
-                    </div>
-                    <div class="card-body">Emp ID:${empList[i].id}                  
-                    </div>
-                    <div class="card-body">Email:${empList[i].email}
-                    </div>
-                    <div class="card-body">School:${empList[i].school}
-                </div>             
-                `
-        
-                }
-        
-        
-            }
-        }
-        
-        
-        const generateMarkDown = function(empList) {
-
-
-            return `
-            
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Team Profile</title>
-            </head>
-            <body>
-        
-            ${employeeCards(empList)}
-            
-            </body>
-            </html>
-            
-            `
-        }
         
 
         fs.writeFile('./dist/index.html', generateMarkDown(empList), (err) => {
