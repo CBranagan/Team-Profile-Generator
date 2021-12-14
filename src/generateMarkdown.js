@@ -20,7 +20,7 @@ function employeeCards(empList) {
             </div>
             <div class="card-body">Emp ID:${empList[i].id}                  
             </div>
-            <a href="mailto:${empList[i].email} class="card-body">Email: ${empList[i].email}</a>
+            <a href="mailto:${empList[i].email}" class="card-body">Email: ${empList[i].email}</a>
             
             <div class="card-body">Office Number:${empList[i].office}
             </div>
@@ -40,7 +40,7 @@ function employeeCards(empList) {
             </div>
             <div class="card-body">Emp ID:${empList[i].id}                  
             </div>
-            <a href="mailto:${empList[i].email} class="card-body">Email: ${empList[i].email}</a>
+            <a href="mailto:${empList[i].email}" class="card-body">Email: ${empList[i].email}</a>
             
             <a href='https://github.com/${empList[i].github}' class="card-body">GitHub ${empList[i].github}</a>
         </div>  
@@ -58,7 +58,7 @@ function employeeCards(empList) {
             </div>
             <div class="card-body">Emp ID: ${empList[i].id}                  
             </div>
-            <a href="mailto:${empList[i].email} class="card-body">Email: ${empList[i].email}</a>
+            <a href="mailto:${empList[i].email}" class="card-body">Email: ${empList[i].email}</a>
             
             <div class="card-body">School: ${empList[i].school}
             </div>
