@@ -1,7 +1,7 @@
 
   # Team Profile Generator
   
-    !(https://img.shields.io/badge/License-MIT-yellow.svg)
+    [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
 
   ## Description
    
